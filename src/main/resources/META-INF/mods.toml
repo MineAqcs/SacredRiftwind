@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''
+This is a quite simple mod that adds an enchantment called Sacred Riftwind. The damage of the attackers whose weapons have this kind of enchantment is going to increase corresponding to their health. The less their health is, the higher the damage bonus is.
+这是一款相当简单的模组，新增了一种名为“圣痕裂风”的附魔。当攻击者装备此附魔武器时，武器伤害将随自身当前生命值百分比的降低而提升。
+此附魔默认最高等级为5。
+伤害加成上限等于附魔等级*0.1。
+'''
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
